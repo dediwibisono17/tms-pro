@@ -1,6 +1,13 @@
 .book {
     padding: 102px 0;
+    position: relative;
     .data {
-        font-size: 1.8rem;
+        p {
+
+            font-size: 1.8rem;
+            @media screen and (max-width:766px) {
+                font-size: 1.2rem;
+            }
+        }
     }
 }

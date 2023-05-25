@@ -6,3 +6,7 @@ $(".slick-banner").slick(
         autoplaySpeed: 2000,
     }
 )
+
+$(document).ready(function(){
+    AOS.init()
+})

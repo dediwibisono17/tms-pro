@@ -11,6 +11,9 @@
         filter: grayscale(100);
         opacity: .5;
         position: relative;
+        @media screen and (max-width:766px) {
+            height: 240px;
+        }
         &::before {
             content: "";
             position: absolute;

@@ -9,7 +9,11 @@ main {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
-
+footer {
+    background: rgb(7, 9, 15);
+    color: white;
+    padding: 8px;
+}
 section {
     position: relative;
     padding: 32px 0;
@@ -23,6 +27,24 @@ section {
     position: absolute;
     left: 11%;
     bottom: 15vh;
+}
+
+.btn-primer {
+    background: white;
+    margin: 24px 0;
+    border-radius: 16px;
+    &:hover {
+        background: #d8ba72;
+    }
+    a {
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
+        &:hover {
+            text-decoration: none;
+            // background: #d8ba72;
+        }
+    }
 }
 
 .titlex {

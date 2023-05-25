@@ -11,6 +11,12 @@
     // position: relative;
     // filter: grayscale(100);
     position: relative;
+    .carda {
+        margin-bottom: 16px;
+        @media screen and (max-width:766px) {
+            margin-bottom: 32px;
+        }
+    }
     .img {
         position: absolute;
         inset: 0;
