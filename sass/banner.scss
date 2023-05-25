@@ -1,0 +1,83 @@
+.banner {
+    background: black;
+    padding: 0;
+    .slick-next {
+        right: 16px;
+    }
+    .slick-prev {
+        left: 16px;
+    }
+    .all {
+        position: relative;
+        .img {
+            width: auto;
+            height: 100vh;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 80vh;
+                background: linear-gradient(to top, black, transparent);
+            }
+            @media screen and (max-width:766px) {
+                height: 85vh;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .text {
+            position: absolute;
+            left: 5vw;
+            bottom: 10vh;
+            width: 70vw;
+            h2 {
+                font-weight: 700;
+                color: #d8ba72;
+                text-shadow: 2px 2px black;
+                font-size: 3.7rem;
+                @media screen and (max-width: 766px) {
+                    font-size: 2rem;
+                }
+            }
+            p {
+                color: white;
+                font-size: 1.3rem;
+                @media screen and (max-width: 766px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .s-bright-arrow {
+        position: absolute;
+        bottom: 0;
+        height: 25px;
+        width: 100%;
+        left: 0;
+        z-index: 100;
+        .a1 {
+            left: 0;
+            border-right-color: transparent!important;
+        }
+        .a2 {
+            right: 0;
+            border-left-color: transparent!important;
+        }
+        .a1,
+        .a2 {
+            position: absolute;
+            bottom: 0;
+            width: 50%;
+            height: 0;
+            box-sizing: border-box;
+            border: 25px solid transparent;
+            border-top: none;
+        }
+    }
+}
