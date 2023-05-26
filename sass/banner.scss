@@ -1,7 +1,10 @@
 .banner {
-    background: black;
+    background: $darkblue;
     padding: 0;
     z-index: 40;
+    @media screen and (max-width: 766px) {
+        min-height: 80vh;
+    }
     .slick-next {
         right: 16px;
     }
@@ -21,10 +24,10 @@
                 right: 0;
                 bottom: 0;
                 height: 80vh;
-                background: linear-gradient(to top, black, transparent);
+                background: linear-gradient(to top, $darkblue, transparent);
             }
             @media screen and (max-width:766px) {
-                height: 85vh;
+                height: 100vh;
             }
             img {
                 width: 100%;
@@ -76,6 +79,7 @@
             bottom: 0;
             width: 50%;
             height: 0;
+            border-color: $darkblue;
             box-sizing: border-box;
             border: 25px solid transparent;
             border-top: none;
