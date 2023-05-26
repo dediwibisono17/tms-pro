@@ -30,7 +30,7 @@
             position: absolute;
             // -webkit-linear-gradient(
             // background: linear-gradient(to top, #07090f, rgba(7, 9, 15, .6), #07090f)
-            background: linear-gradient(to top, #07090f, rgba(7, 9, 15, 0.6), #07090f)
+            background: linear-gradient(to top, $darkblue, rgba(7, 9, 15, 0.6), $darkblue)
         }
         img {
             width: 100%;
