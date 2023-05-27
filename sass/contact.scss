@@ -39,6 +39,9 @@
             position: absolute;
             inset: 0;
             background: linear-gradient(to top, $darkblue, rgba($darkblue,.8),$darkblue);
+            @media screen and (max-width:766px) {
+                background: linear-gradient(to top, $darkblue, rgba($darkblue,.6),$darkblue);
+            }
         }
         img {
             width: 100%;
