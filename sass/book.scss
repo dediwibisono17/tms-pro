@@ -2,6 +2,16 @@
     padding: 102px 0;
     position: relative;
     z-index: 40;
+    .content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 50vw;
+        transform: translate(-50%,30%);
+        @media screen and (max-width:766px) {
+            width: 80vw;
+        }
+    }
     .data {
         p {
             font-size: 1.8rem;
