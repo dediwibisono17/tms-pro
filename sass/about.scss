@@ -28,3 +28,10 @@
         }
     }
 }
+
+.modal-content {
+    background: black !important;
+    // backdrop-filter: blur(12px);
+    color: white;
+    border-radius: 16px !important;
+}
