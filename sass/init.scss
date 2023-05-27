@@ -77,16 +77,16 @@ section {
     }
     &-next,
     &-prev {
-        border: 2px solid rgba(255, 255, 255, 0.5);
+        // border: 2px solid rgba(255, 255, 255, 0.5);
         width: 42px;
-        background: rgba(#d8ba72, .6);
-        // backdrop-filter: blur(2px);
+        // background: rgba(#d8ba72, .6);
+        backdrop-filter: blur(2px);
         height: 42px;
         border-radius: 50%;
         &:hover,
         &:focus,
         &:active {
-            background: rgba(#d8ba72, .8);
+            background: rgba(#d8ba72, .2);
         }
         &::before {
             font-family: "FontAwesome";
