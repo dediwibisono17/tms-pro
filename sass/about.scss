@@ -1,6 +1,25 @@
 .about {
     background: $darkblue;
     z-index: 40;
+    position: relative;
+    .bgb {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, $darkblue, rgba($darkblue,.9),$darkblue);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     p {
         color: #f8f8f8;
     }
