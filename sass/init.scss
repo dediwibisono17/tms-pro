@@ -83,6 +83,9 @@ section {
         backdrop-filter: blur(2px);
         height: 42px;
         border-radius: 50%;
+        @media screen and (max-width:766px) {
+            top: 90%;
+        }
         &:hover,
         &:focus,
         &:active {
@@ -110,6 +113,9 @@ section {
         left: -16px;
         z-index: 9;
         // transform: translate(-100%, 0%);
+        @media screen and (max-width:766px) {
+            left: 80%;
+        }
         &::before {
             content: "\f053";
         }
