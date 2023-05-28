@@ -67,6 +67,9 @@
         color: $darkblue;
         padding: 4px 16px;
         font-weight: 700;
+        @media screen and (max-width:766px) {
+            font-size: 1.4rem;
+        }
     }
 
     .content {
