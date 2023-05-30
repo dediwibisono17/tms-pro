@@ -13,11 +13,14 @@ $(document).ready(function(){
     AOS.init()
 })
 
+
+
 $('ul.menu').find('a').click(function () {
     var $href = $(this).attr('href');
     // alert($href)
     var $anchor = $($href).offset();
     $('body,html').animate({ scrollTop: $anchor.top - 40 }, 200);
+    $("#navbarCollapse").removeClass("show");
     // return false;
 });
 
