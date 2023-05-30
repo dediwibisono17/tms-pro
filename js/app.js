@@ -1,21 +1,17 @@
-$(".slick-banner").slick(
-    {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        // arrows: false,
-        autoplaySpeed: 2000,
-        // dots: true
-    }
-)
+$(".slick-banner").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // autoplay: true,
+    // arrows: false,
+    autoplaySpeed: 2000,
+    // dots: true
+})
 
-$(document).ready(function(){
+$(document).ready(function() {
     AOS.init()
 })
 
-
-
-$('ul.menu').find('a').click(function () {
+$('ul.menu').find('a').click(function() {
     var $href = $(this).attr('href');
     // alert($href)
     var $anchor = $($href).offset();
@@ -24,8 +20,8 @@ $('ul.menu').find('a').click(function () {
     // return false;
 });
 
-$(document).ready(function () {
-    $('ul.menu li a').click(function () {
+$(document).ready(function() {
+    $('ul.menu li a').click(function() {
         $('li a').removeClass("active");
         $(this).addClass("active");
     });
